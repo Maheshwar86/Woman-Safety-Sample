@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Women's Safety & Security</h1>
+    <div class="contact-section">
+        <button onclick="callNumber('100')">Call Police (100)</button>
+        <button onclick="callNumber('108')">Call Ambulance (108)</button>
+        <button onclick="callNumber('1234567890')">Call Trusted Contact</button>
+    </div>
+    <form id="reportForm">
+        <label for="issue">Describe the Issue:</label>
+        <textarea id="issue" name="issue" required></textarea>
+
+        <label for="medical">Emergency Medical Assistance Required?</label>
+        <select id="medical" name="medical" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="submit">Report Issue</button>
+    </form>
+    <p id="status"></p>
+    <div class="location-section">
+        <button onclick="sendLocation()">Send Live Location</button>
+    </div>
+    <div class="police-stations">
+        <h2>Nearby Police Stations</h2>
+        <ul>
+            <li>Police Station 1: 123-456-7890</li>
+            <li>Police Station 2: 098-765-4321</li>
+            <li>Police Station 3: 555-555-5555</li>
+        </ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
